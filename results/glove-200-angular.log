@@ -1,0 +1,49 @@
+['examples/main.py', 'examples/config_glove-200-angular.json']
+Normalization done
+Using crinn_high for 200 dimensions
+AffineCalibrator calibration done, min = -0.161349, max = 0.169053, dif = 0.330402
+HNSW Construction. 1183514 items
+
+
+Ultra-Efficient Graph Saving done
+Ultra-Efficient Graph Loading done
+Starting quantum-coherence adaptive intelligence refiner quantizer training
+Done quantum-coherence adaptive intelligence refiner quantizer training, cost 64.03s
+Starting quantizer training
+AffineCalibrator calibration done, min = -0.161349, max = 0.169053, dif = 0.330402
+Done quantizer training, cost -62.71s
+=============Start optimization=============
+settint best po = 1, best pl = 1
+gaining  73.14% performance improvement wrt baseline
+gaining  93.74% performance improvement wrt slow
+=============Done optimization=============
+Building time of index: 303.1606149673462s
+Memory usage of index: 2127.375MB
+dataset: glove-200-angular, index: HNSW, quantizer: SQ4U, top10
+  ef: 10
+	recall: 43.11%, max qps: 16908.51, avg dist: 1390.97
+  ef: 20
+	recall: 44.10%, max qps: 16263.23, avg dist: 1390.97
+  ef: 30
+	recall: 48.63%, max qps: 12619.14, avg dist: 1390.97
+  ef: 40
+	recall: 51.51%, max qps: 10337.82, avg dist: 1390.97
+  ef: 50
+	recall: 53.66%, max qps: 8979.82, avg dist: 1390.97
+  ef: 70
+	recall: 56.62%, max qps: 7237.54, avg dist: 1390.97
+  ef: 100
+	recall: 59.45%, max qps: 5741.56, avg dist: 1390.97
+  ef: 150
+	recall: 62.51%, max qps: 4482.18, avg dist: 1390.97
+  ef: 200
+	recall: 65.38%, max qps: 3628.67, avg dist: 1390.97
+  ef: 300
+	recall: 69.63%, max qps: 2598.92, avg dist: 1390.97
+  ef: 400
+	recall: 72.32%, max qps: 2026.73, avg dist: 1390.97
+  ef: 600
+	recall: 75.72%, max qps: 1547.12, avg dist: 1390.97
+  ef: 800
+	recall: 77.72%, max qps: 1139.00, avg dist: 1390.97
+EVALUATION DONE

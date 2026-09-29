@@ -1,0 +1,86 @@
+['examples/main.py', 'examples/config_glove-200-angular-l2.json']
+Using crinn_high for 200 dimensions
+AffineCalibrator calibration done, min = -0.161349, max = 0.169053, dif = 0.330402
+HNSW Construction. 1183514 items
+
+
+Ultra-Efficient Graph Saving done
+Ultra-Efficient Graph Loading done
+Starting quantum-coherence adaptive intelligence refiner quantizer training
+Done quantum-coherence adaptive intelligence refiner quantizer training, cost 0.16s
+Starting quantizer training
+AffineCalibrator calibration done, min = -0.161349, max = 0.169053, dif = 0.330402
+Done quantizer training, cost 0.41s
+=============Start optimization=============
+settint best po = 5, best pl = 2
+gaining  18.84% performance improvement wrt baseline
+gaining  69.54% performance improvement wrt slow
+=============Done optimization=============
+Building time of index: 85.58517861366272s
+Memory usage of index: 2127.8515625MB
+dataset: glove-200-angular-l2, index: HNSW, quantizer: SQ4U, top10
+  ef: 10
+	recall: 37.64%, max qps: 37815.17, avg dist: 1339.54
+  ef: 20
+	recall: 38.64%, max qps: 36403.49, avg dist: 1339.54
+  ef: 30
+	recall: 42.79%, max qps: 28223.83, avg dist: 1339.54
+  ef: 40
+	recall: 45.88%, max qps: 23367.77, avg dist: 1339.54
+  ef: 50
+	recall: 47.91%, max qps: 19972.22, avg dist: 1339.54
+  ef: 70
+	recall: 51.11%, max qps: 15774.00, avg dist: 1339.54
+  ef: 100
+	recall: 54.58%, max qps: 12845.76, avg dist: 1339.54
+  ef: 150
+	recall: 58.51%, max qps: 9051.96, avg dist: 1339.54
+  ef: 200
+	recall: 62.22%, max qps: 6936.44, avg dist: 1339.54
+  ef: 300
+	recall: 67.92%, max qps: 5562.62, avg dist: 1339.54
+  ef: 400
+	recall: 71.50%, max qps: 4471.33, avg dist: 1339.54
+  ef: 600
+	recall: 75.81%, max qps: 3097.64, avg dist: 1339.54
+  ef: 800
+	recall: 77.77%, max qps: 2486.07, avg dist: 1339.54
+Using crinn_high for 200 dimensions
+Ultra-Efficient Graph Loading done
+Starting quantizer training
+Done quantizer training, cost 0.22s
+=============Start optimization=============
+settint best po = 12, best pl = 6
+gaining -100.03% performance improvement wrt baseline
+gaining -100.03% performance improvement wrt slow
+=============Done optimization=============
+Building time of index: 6.5045366287231445s
+Memory usage of index: 2464.578125MB
+dataset: glove-200-angular-l2, index: HNSW, quantizer: FP32, top10
+  ef: 10
+	recall: 45.38%, max qps: 17196.45, avg dist: 1411.54
+  ef: 20
+	recall: 55.73%, max qps: 11136.77, avg dist: 1411.54
+  ef: 30
+	recall: 61.31%, max qps: 8194.79, avg dist: 1411.54
+  ef: 40
+	recall: 64.99%, max qps: 6911.71, avg dist: 1411.54
+  ef: 50
+	recall: 67.68%, max qps: 6154.76, avg dist: 1411.54
+  ef: 70
+	recall: 71.27%, max qps: 4936.99, avg dist: 1411.54
+  ef: 100
+	recall: 74.49%, max qps: 3885.66, avg dist: 1411.54
+  ef: 150
+	recall: 77.44%, max qps: 2981.64, avg dist: 1411.54
+  ef: 200
+	recall: 80.09%, max qps: 2381.99, avg dist: 1411.54
+  ef: 300
+	recall: 82.50%, max qps: 1834.09, avg dist: 1411.54
+  ef: 400
+	recall: 83.97%, max qps: 1472.09, avg dist: 1411.54
+  ef: 600
+	recall: 86.15%, max qps: 1094.89, avg dist: 1411.54
+  ef: 800
+	recall: 87.38%, max qps: 921.43, avg dist: 1411.54
+EVALUATION DONE

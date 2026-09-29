@@ -1,0 +1,30 @@
+{
+  "datasets": [
+    "glove-200-angular-l2"
+  ],
+  "index_params": [
+    [
+      "HNSW",
+      {
+        "R": 48,
+        "L": 200
+      }
+    ]
+  ],
+  "rebuild": false,
+  "build_quant": "SQ4U",
+  "search_quants": [
+    "SQ4U",
+    "FP32"
+  ],
+  "topks": [
+    10
+  ],
+  "efs": [
+    10, 20, 30, 40, 50, 70, 100, 150, 200, 300, 400, 600, 800
+  ],
+  "runs": 3,
+  "batch": [
+    false
+  ]
+}

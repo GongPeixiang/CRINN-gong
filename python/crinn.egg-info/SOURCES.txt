@@ -1,0 +1,11 @@
+setup.py
+./bindings.cc
+./bindings_high.cc
+ann_dataset/__init__.py
+ann_dataset/dataset.py
+crinn.egg-info/PKG-INFO
+crinn.egg-info/SOURCES.txt
+crinn.egg-info/dependency_links.txt
+crinn.egg-info/not-zip-safe
+crinn.egg-info/requires.txt
+crinn.egg-info/top_level.txt

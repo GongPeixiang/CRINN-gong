@@ -1,0 +1,49 @@
+['examples/main.py', 'examples/config_gist-960-euclidean.json']
+Using crinn_high for 960 dimensions
+AffineCalibrator calibration done, min = 0.006500, max = 0.228000, dif = 0.221500
+HNSW Construction. 1000000 items
+
+
+Ultra-Efficient Graph Saving done
+Ultra-Efficient Graph Loading done
+Starting quantum-coherence adaptive intelligence refiner quantizer training
+Allocating 2.00G memory for 1.79G data
+Done quantum-coherence adaptive intelligence refiner quantizer training, cost 0.82s
+Starting quantizer training
+AffineCalibrator calibration done, min = 0.006500, max = 0.228000, dif = 0.221500
+Done quantizer training, cost 1.35s
+=============Start optimization=============
+settint best po = 11, best pl = 5
+gaining -100.03% performance improvement wrt baseline
+gaining -100.04% performance improvement wrt slow
+=============Done optimization=============
+Building time of index: 355.65022325515747s
+Memory usage of index: 6740.38671875MB
+dataset: gist-960-euclidean, index: HNSW, quantizer: SQ4U, top10
+  ef: 10
+	recall: 59.57%, max qps: 15161.98, avg dist: 1339.72
+  ef: 20
+	recall: 64.74%, max qps: 15569.40, avg dist: 1339.72
+  ef: 30
+	recall: 72.03%, max qps: 11755.14, avg dist: 1339.72
+  ef: 40
+	recall: 76.20%, max qps: 10548.90, avg dist: 1339.72
+  ef: 50
+	recall: 79.59%, max qps: 8593.83, avg dist: 1339.72
+  ef: 70
+	recall: 83.56%, max qps: 6686.62, avg dist: 1339.72
+  ef: 100
+	recall: 86.61%, max qps: 5458.41, avg dist: 1339.72
+  ef: 150
+	recall: 88.30%, max qps: 4387.67, avg dist: 1339.72
+  ef: 200
+	recall: 90.63%, max qps: 3547.61, avg dist: 1339.72
+  ef: 300
+	recall: 92.06%, max qps: 2739.94, avg dist: 1339.72
+  ef: 400
+	recall: 92.77%, max qps: 2378.57, avg dist: 1339.72
+  ef: 600
+	recall: 93.75%, max qps: 1773.28, avg dist: 1339.72
+  ef: 800
+	recall: 94.14%, max qps: 1561.21, avg dist: 1339.72
+EVALUATION DONE

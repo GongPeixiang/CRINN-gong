@@ -1,0 +1,48 @@
+['examples/main.py', 'examples/config_sift-128-euclidean.json']
+Using crinn for 128 dimensions
+AffineCalibrator calibration done, min = 0.000000, max = 131.000000, dif = 131.000000
+HNSW Construction. 1000000 items
+
+
+Ultra-Efficient Graph Saving done
+Ultra-Efficient Graph Loading done
+Starting quantum-coherence adaptive intelligence refiner quantizer training
+Done quantum-coherence adaptive intelligence refiner quantizer training, cost -63.15s
+Starting QZOAIS quantizer training
+AffineCalibrator calibration done, min = 0.000000, max = 131.000000, dif = 131.000000
+Done QZOAIS quantizer training, cost 0.25s
+=============Start QZOAIS optimization=============
+QZOAIS: best po = 1, best pl = 1
+gaining  66.63% performance improvement wrt baseline
+gaining  44.76% performance improvement wrt slow
+=============Done QZOAIS optimization=============
+Building time of index: 212.90457320213318s
+Memory usage of index: 1340.3828125MB
+dataset: sift-128-euclidean, index: HNSW, quantizer: SQ4U, top10
+  ef: 10
+	recall: 88.91%, max qps: 24854.72, avg dist: 1039.51
+  ef: 20
+	recall: 89.95%, max qps: 23131.49, avg dist: 1039.51
+  ef: 30
+	recall: 93.44%, max qps: 17759.85, avg dist: 1039.51
+  ef: 40
+	recall: 95.26%, max qps: 14116.28, avg dist: 1039.51
+  ef: 50
+	recall: 96.22%, max qps: 11691.26, avg dist: 1039.51
+  ef: 70
+	recall: 97.25%, max qps: 9441.55, avg dist: 1039.51
+  ef: 100
+	recall: 97.84%, max qps: 7038.97, avg dist: 1039.51
+  ef: 150
+	recall: 98.04%, max qps: 4975.38, avg dist: 1039.51
+  ef: 200
+	recall: 98.14%, max qps: 4267.45, avg dist: 1039.51
+  ef: 300
+	recall: 98.29%, max qps: 2974.72, avg dist: 1039.51
+  ef: 400
+	recall: 98.30%, max qps: 2246.55, avg dist: 1039.51
+  ef: 600
+	recall: 98.33%, max qps: 1693.41, avg dist: 1039.51
+  ef: 800
+	recall: 98.33%, max qps: 1371.65, avg dist: 1039.51
+EVALUATION DONE
