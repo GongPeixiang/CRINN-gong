@@ -127,6 +127,43 @@ class DatasetGlove25(Dataset):
         self.file = h5py.File(path)
 
 
+class DatasetGlove200(Dataset):
+    name = "glove-200-angular"
+    metric = "IP"
+
+    def __init__(self, dir=None):
+        path = self.get_fname(dir)
+        if not os.path.exists(path):
+            os.system(f"wget --output-document {path} {download(self.name)}")
+        self.file = h5py.File(path)
+
+
+class DatasetGlove200L2(DatasetGlove200):
+    """Same GloVe-200 data/ground truth, but scored with L2 on L2-normalized
+    vectors instead of inner product. For unit vectors ||a-b||^2 = 2 - 2*a.b,
+    so the ranking (and therefore recall against the angular ground truth) is
+    identical; only the distance computation differs.
+
+    Normalization happens in get_database()/get_queries(), i.e. offline, before
+    the build/query timers start.
+    """
+
+    name = "glove-200-angular-l2"
+    metric = "L2"
+
+    def get_fname(self, dir):
+        # reuse the same HDF5 file as the angular variant
+        if dir is None:
+            dir = "datasets"
+        return f"{dir}/glove-200-angular.hdf5"
+
+    def get_database(self):
+        return preprocessing.normalize(np.array(self.file["train"]), norm="l2", axis=1)
+
+    def get_queries(self):
+        return preprocessing.normalize(np.array(self.file["test"]), norm="l2", axis=1)
+
+
 class DatasetLastFM64(Dataset):
     name = "lastfm-64-dot"
     metric = "IP"
@@ -196,6 +233,8 @@ dataset_dict = {
     "fashion-mnist-784-euclidean": DatasetFashionMnist,
     "nytimes-256-angular": DatasetNYTimes,
     "glove-100-angular": DatasetGlove100,
+    "glove-200-angular": DatasetGlove200,
+    "glove-200-angular-l2": DatasetGlove200L2,
     "glove-25-angular": DatasetGlove25,
     "lastfm-64-dot": DatasetLastFM64,
     "gist-960-euclidean": DatasetGIST960,

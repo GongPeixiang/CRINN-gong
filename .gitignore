@@ -1,7 +1,8 @@
 build
 .cache
 python/crinn.egg-info
-examples/__pycache__
+__pycache__/
+*.pyc
 .DS_Store
 datasets/
 python/tmp
